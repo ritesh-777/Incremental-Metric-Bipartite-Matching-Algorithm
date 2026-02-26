@@ -190,8 +190,8 @@ Each algorithm generates CSV files with the following format:
 - **Delta**: 0.001 (distance scaling parameter)
 - **Batch Size**: 200 requests per batch
 - **Instances**: 10 independent runs per configuration
-- **Dimensions**: 2D for Synthetic/Taxi, 784D for MNIST
-- **Problem Sizes**: 1000 to 10000 servers/requests
+- **Dimensions**: 2D for Synthetic/Taxi, 784D for MNIST, 1D for Beijing Road Network
+- **Problem Sizes**: Fixed 10000 servers. 10000 requests are arriving one-by-one 
 
 ### GPU Configuration
 - **Device**: CUDA-enabled GPU (falls back to CPU if unavailable)
