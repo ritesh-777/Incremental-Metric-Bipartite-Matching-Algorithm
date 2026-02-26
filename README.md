@@ -67,7 +67,14 @@ pip install torch pandas matplotlib numpy pot pyproj openai rtree
 #### Running C++ Algorithms (Quadtree)
 ```bash
 cd Synthetic/
-g++ -fopenmp -std=c++20 -lpthread driver.cpp -o driver
+g++ -fopenmp -std=c++20 -lpthread driver_QT.cpp -o driver_QT
+./driver
+```
+
+#### Running C++ Algorithms (Push-Relabel Sequential version)
+```bash
+cd Synthetic/
+g++ -fopenmp -std=c++20 -lpthread driver_PR.cpp -o driver_PR
 ./driver
 ```
 
