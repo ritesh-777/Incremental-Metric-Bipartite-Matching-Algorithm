@@ -18,7 +18,7 @@ Each dataset folder contains algorithm implementations, plotting utilities, and 
 ## Algorithms Implemented
 
 1. **Batch Incremental Push-Relabel (PRPR)**: GPU-accelerated implementation using PyTorch.
-2. **Greedy Algorithm**: Greedy Matching using PyTorch. This implementation specifically benifits in higher dimensional datasets (like MNIST).
+2. **Greedy Algorithm**: Greedy Matching using PyTorch. This implementation specifically benifit in higher dimensional datasets (like MNIST).
 3. **Sequential Push-Relabel (PR)**: CPU-based sequential implementation of Push-Relabel for processing single request at a time (C++).
 4. **Quadtree Algorithm (QT)**: CPU-based spatial partitioning approach (C++).
 5. **OnlineOptimal Algorithm**: CPU-based spatial optimal online matching algorithm (C++).
