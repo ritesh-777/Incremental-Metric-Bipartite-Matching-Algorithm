@@ -1,11 +1,11 @@
-# Online Matching Algorithms - Supplementary Material
+# Efficient Algorithms for Incremental Metric Bipartite Matching - Implementation
 
-This supplementary material contains implementations and experimental results for three online matching algorithms evaluated on three different datasets: Beijing Road Network, Synthetic, MNIST, and Taxi.
+This repository contains implementations and experimental results for three online matching algorithms evaluated on three different datasets: Beijing Road Network, Synthetic, MNIST, and Taxi.
 
 ## Repository Structure
 
 ```
-supplementary/
+main/
 ├── Beijing Road Network/
 ├── Synthetic/
 ├── MNIST/
