@@ -1,6 +1,6 @@
 # Efficient Algorithms for Incremental Metric Bipartite Matching - Implementation
 
-This repository contains implementations and experimental results for three online matching algorithms evaluated on three different datasets: Beijing Road Network, Synthetic, MNIST, and Taxi.
+This repository contains the implementation of the Push-Relabel (PR) algorithm introduced in the paper [Efficient Algorithms for Incremental Metric Bipartite Matching](https://openreview.net/forum?id=wnIanx0r0w), accepted in ICLR 2026. Furthermore, the project constains experimental results of three other online matching algorithms to benchmark with PR evaluated on four different datasets: Beijing Road Network, Synthetic, MNIST, and NYC-Taxi.
 
 ## Repository Structure
 
@@ -9,7 +9,9 @@ main/
 ├── Beijing Road Network/
 ├── Synthetic/
 ├── MNIST/
-├── Taxi/
+├── NYC-Taxi/
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
