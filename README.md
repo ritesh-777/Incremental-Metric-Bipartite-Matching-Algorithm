@@ -205,5 +205,5 @@ Each algorithm generates CSV files with the following format:
 3. **Compilation**: C++ code requires OpenMP support for parallel execution.
 4. **Data Location**: Ensure `PlotData/` directories contain the required CSV datasets.
 5. **Missing Files**: For the experiments on the Beijing Road Network, we precomputed the shortest path distances among cities and stored in binary files (one for sequential PR, another for PRPR). Due to storage limitations, these files are not present in the GitHub repo but can be downloaded from the following links. Testers must download these two files and place them under `Beijing Road Network/` directory in order to reproduce the results.
-    - `*dists.bin*` : Download from [here](https://drive.google.com/file/d/1HbFA89hHoaSbO12RmoKvvs2NBulJD_iN/view?usp=drive_link). Required for C++ implementation.
-    - `*first_n_dists.pkl*` : Download from [here](https://drive.google.com/file/d/1bvY9ARtw9IB3c2MXBBBy-CFyE-HcKELX/view?usp=drive_link). Required for Pyhthon implementation.
+    - *`dists.bin`* : Download from [here](https://drive.google.com/file/d/1HbFA89hHoaSbO12RmoKvvs2NBulJD_iN/view?usp=drive_link). Required for C++ implementation.
+    - *`first_n_dists.pkl`* : Download from [here](https://drive.google.com/file/d/1bvY9ARtw9IB3c2MXBBBy-CFyE-HcKELX/view?usp=drive_link). Required for Pyhthon implementation.
