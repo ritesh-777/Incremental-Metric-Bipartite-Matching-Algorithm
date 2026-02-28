@@ -180,27 +180,30 @@ Each algorithm generates CSV files with the following format:
 - **Naming Convention**: `{instance_id}_{algorithm}_{delta}_{dataset_type}_{dimensions}dim.csv`
 
 ### Plots Generated
-1. **Cost vs. Number of Requests**: Comparative performance analysis
-2. **Runtime vs. Number of Requests**: Execution time comparison
-3. **Statistical Analysis**: Mean performance with standard deviation bands
+1. **Cost vs. Number of Requests**: Comparative performance analysis.
+2. **Runtime vs. Number of Requests**: Execution time comparison.
+3. **Statistical Analysis**: Mean performance with standard deviation bands.
 
 ## Experimental Parameters
 
 ### Default Configuration
-- **Delta**: 0.001 (distance scaling parameter)
-- **Batch Size**: 200 requests per batch
-- **Instances**: 10 independent runs per configuration
-- **Dimensions**: 2D for Synthetic/Taxi, 784D for MNIST, 1D for Beijing Road Network
-- **Problem Sizes**: Fixed 10000 servers. 10000 requests are arriving one-by-one 
+- **Delta**: 0.001 (distance scaling parameter).
+- **Batch Size**: 200 requests per batch.
+- **Instances**: 10 independent runs per configuration.
+- **Dimensions**: 2D for Synthetic/Taxi, 784D for MNIST, 1D for Beijing Road Network.
+- **Problem Sizes**: Fixed 10000 servers. 10000 requests are arriving one-by-one. 
 
 ### GPU Configuration
-- **Device**: CUDA-enabled GPU (falls back to CPU if unavailable)
-- **Memory Management**: Automatic GPU memory cleanup between experiments
-- **Precision**: 32-bit floating point
+- **Device**: CUDA-enabled GPU (falls back to CPU if unavailable).
+- **Memory Management**: Automatic GPU memory cleanup between experiments.
+- **Precision**: 32-bit floating point.
 
 ## Notes
 
-1. **CUDA Compatibility**: Ensure PyTorch CUDA support is properly installed for GPU acceleration
-2. **Memory Requirements**: Large datasets may require significant GPU memory
-3. **Compilation**: C++ code requires OpenMP support for parallel execution
-4. **Data Location**: Ensure `PlotData/` directories contain the required CSV datasets
+1. **CUDA Compatibility**: Ensure PyTorch CUDA support is properly installed for GPU acceleration.
+2. **Memory Requirements**: Large datasets may require significant GPU memory.
+3. **Compilation**: C++ code requires OpenMP support for parallel execution.
+4. **Data Location**: Ensure `PlotData/` directories contain the required CSV datasets.
+5. **Missing Files**: For the experiments on the Beijing Road Network, we precomputed the shortest path distances among cities and stored in binary files (one for sequential PR, another for PRPR). Due to storage limitations, these files are not present in the GitHub repo but can be downloaded from the following links. Testers must download these tow files and place it under `Beijing Road Network/` directory in order to reproduce the results.
+  - *dists.bin* : Download from [here]{https://drive.google.com/file/d/1HbFA89hHoaSbO12RmoKvvs2NBulJD_iN/view?usp=drive_link}. Required for C++ implementation.
+  - *first_n_dists.pkl* : Download from [here]{https://drive.google.com/file/d/1bvY9ARtw9IB3c2MXBBBy-CFyE-HcKELX/view?usp=drive_link}. Required for Pyhthon implementation.
